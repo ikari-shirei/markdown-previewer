@@ -1,20 +1,21 @@
 @mixin common() {
   width: 500px;
-  margin: 8px;
   padding: 16px;
   word-wrap: break-word;
   overflow: scroll;
-  border: 1px solid black;
+  border: 1px solid #0700b8;
 }
 
 .App {
   display: flex;
-  //flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   h3 {
-    margin: 8px;
+    display: block;
+    color: #0700b8;
+    margin: 16px 0;
+    align-self: flex-start;
   }
   #editor {
     @include common();
